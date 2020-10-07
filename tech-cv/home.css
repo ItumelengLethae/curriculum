@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-image: url(img/dove.jpg);
+    
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    opacity: 1;
+    position: absolute;
+    transition: opacity .3s linear;
+    
+    width: 100%;
+    
+    /* CSS Smooth Scroll */
+    overflow-y: scroll; 
+    scroll-behavior: smooth;
+    
+}
+
+
+.wrapper{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: rgba(228, 134, 11, 0.322);
+    width: 100%;
+}
+.left-side{
+    display: flex;
+}
+.Right-side{
+    display: flex;
+}
+
+.wrapper > .left-side > div{
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;   
+}
+.wrapper > .Right-side > div{
+    font-size: 1em;
+    margin-right: 100;
+}
+
+.nav-link-wrapper {
+    top: 0;
+    
+    z-index: 1;
+    display: flex;
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.5s;
+    
+}
+.nav-link-wrapper:hover{
+    border-bottom: 1px solid black;
+    text-shadow: 2px 2px 5px palevioletred;
+
+}
+.nav-link-wrapper a:hover{
+    color: black;
+}
+.name :hover{
+    border-bottom: 1px solid black;
+    color: black;
+    text-shadow: yellow;
+}
+section{
+    color: brown;
+    display: flex;
+    flex-direction: column;
+    align-items: unset;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    /* Scroll Snap */
+    scroll-snap-align: center;
+    animation-play-state: running;
+}
+section#RESUME.lead{
+    font-size: 1rem;
+    text-align: left;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    margin-left: 35vh;
+    padding-right: 400px;
+}
+p{
+    margin-bottom: 30px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 50px;
+    padding-right: 50px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+.contain { 
+    background-color: rgb(192, 192, 192); 
+    width: 80%; 
+    border-radius: 15px; 
+} 
+
+.skill { 
+    background-color: rgb(116, 194, 92); 
+    color: white; 
+    padding: 1%; 
+    text-align: right; 
+    font-size: 20px; 
+    border-radius: 15px; 
+} 
+
+.vs { 
+    
+    width: 80%; 
+    background-color: teal;
+} 
+
+.java { 
+    
+    width: 60%; 
+    
+} 
+.sql { 
+    width: 80%; 
+    background-color: yellow;
+} 
+.vscode { 
+    width: 80%; 
+    background-color: pink;
+} 
+.python { 
+    width: 80%; 
+    background-color: blue;
+} 
+section#HOME.html{
+    width: 100%;
+    height: 100%;
+    background-image: url(img/dove.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/*.imge{
+    background-image: url(img/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    opacity: 1;
+    margin: auto;
+    width: 1%;
+    height: 200px;
+    border: 1px solid black;
+    padding-right: -100px;
+    padding-left: 300px;
+    margin-right: -100px;
+    margin-left: 500px;
+    float: center;
+    
+}*/
+section#ABOUT.h1{
+    margin-top: 0;
+}
+section#ABOUT{
+    background-image: url(img/img1.jpg);
+    width: 100%;
+    height: 100%;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-decoration-style: dotted;
+    background-color: wheat;
+    height: 100%;
+    width: 100%;
+    animation-name: colour;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes colour{
+    from{background-color: #fff;}
+    to{background-color: white;}
+}
+.lead.h3{
+    font-size: 1rem;
+    text-align: left;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    margin-left: 35vh;
+}
+section#RESUME{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: burlywood;
+    color: wheat;
+    margin-top: 0;
+    height: 100%;
+    width: 100%;
+}
+.education{
+    width: 500px;
+    color: wheat;
+    text-align: left;
+}
+
+section#SOCIAL{
+    background-repeat: no-repeat;
+    /*background-position: center;*/
+    background-size: cover;
+    background-color: white;
+    color: wheat;
+    margin-top: 0;
+    height: 100%;
+    width: 100%;
+
+}
+.form-control{
+    width: 400px;
+    background-color: rgba(222, 184, 135, 0.356);
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color: black;
+    font-size: 16px;
+    margin-top: 16px;
+    position: center;
+    height: 80%;
+    
+}
+form.submit{
+    background-color: cornflowerblue;
+}
+input{
+    height: 45px;
+}
+
+section#SOCIAL.media{
+    position: absolute;
+    padding-top: 300px;
+    /*top: 40%;*/
+    padding-left: 2050px;
+    transform:translate(-53%, -50%);
+}
+
+
+h1{
+    
+    text-align: center;
+    font-size: 4rem;
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 500px;
+    color: white;
+    
+}
+h6{
+    /*text-align: center;*/
+    font-size: 4rem;
+    padding-top: 0px;
+    margin-top: 0px;
+    
+    color: white;
+}
+h2{
+    text-decoration: underline;
+    text-decoration: hsla(hue, saturation, lightness, alpha);
+    color: wheat;
+    text-align: left;
+    font-size: 2.5rem;
+}
+h3.hover{
+    border-bottom: 1px solid wheat;
+    text-shadow: 2px 2px 5px palevioletred;
+}
+h3:hover{
+    color: wheat;
+}
+.name :hover{
+    border-bottom: 1px solid wheat;
+    color: wheat;
+}
+h3{
+    width: 50%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 0;
+    padding-top: 0;
+    color: whitesmoke;
+    animation-name: slide;
+    animation-duration: 5s;
+}
+@keyframes slide{
+
+}
+h4{
+    text-decoration: underline;
+    text-decoration: hsla(hue, saturation, lightness, alpha);
+    color: rgb(71, 53, 18);
+    text-align: center;
+    font-size: 2.5rem;
+    animation-duration: 2s;
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+}
+h5{
+    color: black;
+    font-size: larger;
+    text-shadow: burlywood;
+    text-transform: capitalize;
+    
+}
+
+@keyframes bounce{
+    0%{
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    75%{
+        transform: scale(1.4);
+        opacity: 2;
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 800px;
+    height: 200px;
+  }
+
